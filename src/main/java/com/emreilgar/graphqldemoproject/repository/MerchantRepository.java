@@ -1,2 +1,10 @@
-package com.emreilgar.graphqldemoproject.repository;public interface MerchantRepository {
+package com.emreilgar.graphqldemoproject.repository;
+
+import com.emreilgar.graphqldemoproject.model.Merchant;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
+@Repository
+public interface MerchantRepository extends JpaRepository<Merchant,Integer> {
+
 }
